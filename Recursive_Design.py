@@ -3,12 +3,17 @@ import turtle
 t = turtle.Turtle()
 screen = turtle.Screen()
 
-def draw_spiral(t , length):
-    for __ in range(10):
-     if length > 5:
-        t.forward(length)
-        t.right(30)
-        draw_spiral(t , length - 5)
-draw_spiral(t , 100)
+screen.bgcolor("black")
 
+colors = ["red", "orange", "green", "yellow", "purple", "blue"]
+t.speed(100)
+
+t.goto(-50,0)
+
+for x in range(360):
+    t.pencolor(colors[x%6])
+    t.pensize(x/180+1)
+    t.forward(x+100)
+    t.left(200)
+turtle.done()
 screen.mainloop()

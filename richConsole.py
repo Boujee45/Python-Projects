@@ -1,4 +1,4 @@
-'''
+
 #pip install Rich
 from rich.console import Console
 from rich.text import Text
@@ -18,7 +18,7 @@ for i in range(6):
 #pip install qrcode
 import qrcode
 qr = qrcode.make("Happy Friendship Day from Oscar")
-qr.save("friendship_day_qr.png")'''
+qr.save("friendship_day_qr.png")
 
 
 
